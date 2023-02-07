@@ -1,0 +1,220 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins ;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-colour : #ffffff;
+  --secondary-colour : #a5b0ff;
+  --thrid-colour : #7855ec;
+}
+
+header {
+  background-color: var(--secondary-colour);
+  color: var(--primary-colour);
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all .5s ease 0s;
+}
+
+.logo:hover {
+  transform: rotate(15deg);
+  color: var(--thrid-colour) ;
+}
+
+nav ul {
+  display: flex;
+  padding: 15px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+}
+
+a {
+  color: var(--primary-colour);
+  text-decoration: none;
+}
+
+li a {
+  transition: all .5s ease 0s;
+}
+
+li a:hover {
+  color: var(--thrid-colour) ;
+}
+
+.btn-a {
+  margin-right: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 8px 12px;
+  background: var(--thrid-colour);
+  color: var(--primary-colour); 
+  transition: all .5s ease 0s; 
+}
+
+.btn-a:hover {
+  background-color: var(--primary-colour);
+  color: var(--thrid-colour);
+}
+
+/* Bagian Header  */
+
+/* bagian container */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+  color: var(--thrid-colour);
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.img-foto {
+  width: 80%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 50px;
+}
+
+.paralax {
+  background-image: url(assets/foto/paral.jpeg);
+  background-repeat: no-repeat; 
+  background-attachment: fixed;
+  background-size: cover;
+  height: 130vh;
+}
+
+.about {
+  display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  background-color: var(--secondary-colour);
+  color: var(--primary-colour);
+}
+
+.mrgn-10 {
+  margin-top: 10px;
+}
+
+
+/* bagian hobby */
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  gap : 20px;
+}
+
+.card-item {
+  color: var(--primary-colour);
+  background-color: var(--secondary-colour);
+  padding: 30px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 2px 2px rgba(0, 0,0,0.2);
+  border-radius: 20px;
+  opacity: 90%;
+  cursor: pointer;
+}
+.card-title {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.icons {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color: var(--thrid-colour);
+  color: var(--primary-colour);
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+  }
+  .img-foto {
+    width: 100%;
+    border-radius: 0%;
+  }
+
+  .container {
+    padding: 0;
+  }
+  .paralax {
+    height: auto;
+  }
+
+  .card {
+    gap: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .card-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+  
+  nav {
+    position: fixed;
+    bottom: 0;
+    z-index: 9;
+    width: 100%;
+    background-color: var(--thrid-colour);
+  }
+  footer {
+    margin-bottom: 70px;
+  }
+
+  .intro {
+    gap: 0;
+    padding-top: 10px ;
+  }
+
+  
+}

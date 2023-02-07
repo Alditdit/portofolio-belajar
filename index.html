@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>belajar</title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1 class="logo">ALDIT</h1>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <button class="btn-a" onclick="redirInstagram()">Follow saya</button>
+</header>
+<div class="container">
+  <div class="intro">
+    <p class="title">Hello, I'm Alditya Dwinata</p>
+    <p class="description">Student at Universitas Malikussaleh</p>
+    <img src="assets/foto/foto.jpeg" alt="foto aldi" class="img-foto">
+  </div>
+</div>
+<div class="paralax" id="about">
+  <div class="about">
+    <p class="title">Saya Suka Ngoding, Ngopi dingin</p>
+    <p class="description">Ngoding aja dulu, inspirasinya nanti</p>
+    <button class="btn-a mrgn-10" onclick="redirWhatsapp()">Mari Kerjasama</button>
+  </div>
+  <div class="container">
+    <div class="card">
+      <div class="card-item">
+        <img src="assets/icons/24-hours.png" alt="icon1" class="icons">
+        <p class="card-title">Service</p>
+        <p class="card-description">Bisa bekerja dimana saja dan kapan saja</p>
+      </div>
+      <div class="card-item">
+        <img src="assets/icons/hot-deal.png" alt="icon2" class="icons">
+        <p class="card-title">Best Deal</p>
+        <p class="card-description">Harga yang sangat ramah di kantong</p>
+      </div>
+      <div class="card-item">
+        <img src="assets/icons/rating.png" alt="icon3" class="icons">
+        <p class="card-title">1000 Reviewer</p>
+        <p class="card-description">sudah memiliki lebih dari 1000+ Customer</p>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <p class="">&copy; Alditya Dwinata 2022</p>
+</footer>
+<script type="text/javascript">
+  function redirInstagram() {
+    window.location.href = "htpps://instagram.com/aldityadwinata/"
+  }
+  function redirWhatsapp() {
+    window.location.href = "htpps://wa.me/081396960170/"
+  }
+</script>
+</body>
+
+</html>
